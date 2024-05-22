@@ -6,6 +6,7 @@
     <title>Custom Calculation</title>
 </head>
 <body>
+    <h1>Marcetcap & net income to annual return</h1>
     <input type="number" id="num1" placeholder="Enter first number">
     /
     <input type="number" id="num2" placeholder="Enter second number">
@@ -28,5 +29,26 @@
             document.getElementById("result").textContent = result;
         }
     </script>
+
+<h1>Annual expected return to PE</h1>
+<input type="number" id="num" placeholder="Enter first number">
+<button onclick="calculateAERResult()">Calculate</button>
+<p>Result: <span id="result2"></span></p>
+
+<script>
+    function calculateAERResult() {
+        const num = parseFloat(document.getElementById("num").value);
+
+          // Calculate x
+          const x = Math.log(2) / Math.log(num);
+
+// Display the result
+document.getElementById('result2').innerText = 'The value of x is: ' + x;
+     
+
+    
+    }
+</script>
+
 </body>
 </html>

@@ -30,7 +30,7 @@
         }
     </script>
 
-<h1>Annual expected return to PE</h1>
+<h1>PE to annual expected return</h1>
 <input type="number" id="num" placeholder="Enter first number">
 <button onclick="calculateAERResult()">Calculate</button>
 <p>Result: <span id="result2"></span></p>
@@ -44,6 +44,26 @@
 
 // Display the result
 document.getElementById('result2').innerText = 'The value of x is: ' + x;
+     
+
+    
+    }
+</script>
+
+<h1>Annual expected return to PE</h1>
+<input type="number" id="num3" placeholder="Enter first number">
+<button onclick="calc()">Calculate</button>
+<p>Result: <span id="result3"></span></p>
+
+<script>
+    function calc() {
+        const num3 = parseFloat(document.getElementById("num3").value);
+
+          // Calculate x
+          const y = Math.log(2) / Math.log(num3);
+
+// Display the result
+document.getElementById('result3').innerText = 'The value of x is: ' + y;
      
 
     

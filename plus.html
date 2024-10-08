@@ -40,7 +40,7 @@
         const num = parseFloat(document.getElementById("num").value);
 
           // Calculate x
-          const x = Math.log(2) / Math.log(num);
+          const x = (Math.pow(2, 1 / num) - 1) * 100;
 
 // Display the result
 document.getElementById('result2').innerText = 'The value of x is: ' + x;
